@@ -1,7 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 import mongooseAggregatePaginate from "mongoose-aggregate-paginate-v2";
 
-
 const commentSchema = new Schema({
     content: {
         type: String,
@@ -12,7 +11,7 @@ const commentSchema = new Schema({
         ref: "Video"
     },
     owner: {
-        typr: Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: "User"
     }
 }, { timestamps: true })
